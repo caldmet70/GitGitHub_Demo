@@ -345,3 +345,61 @@ index 9f49695..82c7cc9 100644
 +
 
 
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git add Git_GitHubTutorial.txt
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git commit -m "We are commiting our changes"
+[master 79d3bea] We are commiting our changes
+ 1 file changed, 51 insertions(+)
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Git_GitHubTutorial.txt
+	modified:   third.rtf
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git diff
+diff --git a/Git_GitHubTutorial.txt b/Git_GitHubTutorial.txt
+index 63351aa..7a8cf01 100644
+--- a/Git_GitHubTutorial.txt
++++ b/Git_GitHubTutorial.txt
+@@ -345,3 +345,19 @@ index 9f49695..82c7cc9 100644
+ +
+ 
+ 
++Parmods-MacBook-Pro:GitGitHub parmodkumar$ git add Git_GitHubTutorial.txt
++Parmods-MacBook-Pro:GitGitHub parmodkumar$ git commit -m "We are commiting our changes"
++[master 79d3bea] We are commiting our changes
++ 1 file changed, 51 insertions(+)
++
++Parmods-MacBook-Pro:GitGitHub parmodkumar$ git status
++On branch master
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git checkout -- <file>..." to discard changes in working directory)
++
++       modified:   Git_GitHubTutorial.txt
++       modified:   third.rtf
++
++no changes added to commit (use "git add" and/or "git commit -a")
++
+diff --git a/third.rtf b/third.rtf
+index 28a9aa5..db37a5b 100644
+--- a/third.rtf
++++ b/third.rtf
+@@ -6,4 +6,7 @@
+ 
+ \f0\fs24 \cf0 This is a random third file.\
+ \
+-Some change made.}
+\ No newline at end of file
++Some change made.\
++\
++Here are some more changes.\
++}
+\ No newline at end of file
+
+
