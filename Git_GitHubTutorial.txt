@@ -1,5 +1,9 @@
 Hello, world!
 
+Hello, world!
+
+Hello, world!
+
 How are you doing today?
 
 Welcome to Data Science!
@@ -101,4 +105,153 @@ drwxr-xr-x  13 parmodkumar  staff   442 Apr 14 08:58 .git
 (## we should not edit these files, we should not try to find them or change as well, by doing so the entire project will get messed up)
 Parmods-MacBook-Pro:GitGitHub parmodkumar$ clear
 Parmods-MacBook-Pro:GitGitHub parmodkumar$ 
-Parmods-MacBook-Pro:GitGitHub parmodkumar$ git add . (## this means add all the changes that we make to our project and hit enter)
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git add . (## this means add all the changes that we make to our project and hit enter) (## commit is a 2 step process, whenever we are committing then we are telling the git to take a snapshot at this time, and if we mess up in the future then we can come back at that stage)
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git commit -m "This is our first commit" (## -m “this is a message to tell us what we did at that commit to remind us”)
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git commit -m "This is our first commit"
+[master (root-commit) 43336d2] This is our first commit
+ 2 files changed, 107 insertions(+)
+ create mode 100644 Git_GitHubTutorial.txt
+ create mode 100644 foo.txt
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git log
+commit 43336d22799345056d93d9f39061d334caa3ab05
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 09:16:29 2016 +0530
+
+    This is our first commit
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git log --author="Parmod Kumar"
+commit 43336d22799345056d93d9f39061d334caa3ab05
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 09:16:29 2016 +0530
+
+    This is our first commit
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git log --author="Wendy" (## Wendy does not exist so it does not display anything)
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Git_GitHubTutorial.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Git_GitHubTutorial.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	second.rtf
+	third.rtf
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+(## adding a file and committing it is a two step process)
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git add second.txt
+fatal: pathspec 'second.txt' did not match any files
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git add second.rtf
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ 
+
+(## working copy > staging area > repository; when ever we create a file then it is in the local folder and whenever we add it it goes to the staging area; tagging are tell us that these are the files that need to committed, and whenever we commit these they goes to the repository)
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   second.rtf
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Git_GitHubTutorial.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	third.rtf
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git commit -m "adding the second file to the repository"
+[master 6089cb2] adding the second file to the repository
+ 1 file changed, 7 insertions(+)
+ create mode 100644 second.rtf
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Git_GitHubTutorial.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	third.rtf
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git add third.rtf
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   third.rtf
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Git_GitHubTutorial.txt
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git commit -m "the third file is now joing other files"
+[master 217d217] the third file is now joing other files
+ 1 file changed, 7 insertions(+)
+ create mode 100644 third.rtf
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git log
+commit 217d2176eb5ace900a8b4e7cf70c4855e02d6050
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 09:46:56 2016 +0530
+
+    the third file is now joing other files
+
+commit 6089cb26785f906dd020d90941db7482f9a49be1
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 09:43:58 2016 +0530
+
+    adding the second file to the repository
+
+commit 43336d22799345056d93d9f39061d334caa3ab05
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 09:16:29 2016 +0530
+
+    This is our first commit
+
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Git_GitHubTutorial.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
