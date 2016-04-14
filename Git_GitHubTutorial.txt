@@ -538,3 +538,98 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git commit -am "Cleaned up the comments"
+[master 088d141] Cleaned up the comments
+ 1 file changed, 33 insertions(+)
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Git_GitHubTutorial.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git checkout -- filehome.rtf
+error: pathspec 'filehome.rtf' did not match any file(s) known to git.
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git checkout -- Git_GitHubTutorial.txt
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ 
+
+(## Unstaging files)
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git log
+commit 088d141850f224299f7e7cdbcefac52210f32904
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 11:07:13 2016 +0530
+
+    Cleaned up the comments
+
+commit 9f23b51646ee81cf45bd65f6873180477861e062
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 11:02:37 2016 +0530
+
+    renamed file and put in NotesVC
+
+commit 5cd62eb997e45146887edba93329db558c105423
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 10:53:37 2016 +0530
+
+    renamed and deleted some files
+
+commit e7b48bf565ae6c1b1688684c2dcdfb4d6a9c70c9
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 10:46:53 2016 +0530
+
+    This is the point we deleted third.rtf
+
+commit 8743e68f0d5a603b08aedf085dfa19a88f1f6078
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 10:42:51 2016 +0530
+
+    some minor changes
+
+commit 78236e28d4bef47ef627eb13bf48fad401f1f09f
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 10:37:01 2016 +0530
+
+    Here are some changes to the two files
+
+commit 79d3bea10a1d9bbba80ca5d1653635e7817951fe
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 10:32:14 2016 +0530
+
+    We are commiting our changes
+
+commit 997869d8f264d7393492ec59bfdd183ae30fe0f8
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 10:25:47 2016 +0530
+
+    This is how we can edit multiple files
+
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git add .
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   Git_GitHubTutorial.txt
+
+
+(## Unstaging from the staging area)
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git reset HEAD Git_GitHubTutorial.txt
+Unstaged changes after reset:
+M	Git_GitHubTutorial.txt
+
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Git_GitHubTutorial.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
