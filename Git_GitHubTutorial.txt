@@ -403,3 +403,40 @@ index 28a9aa5..db37a5b 100644
 \ No newline at end of file
 
 
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git commit -m "Here are some changes to the two files"
+On branch master
+Changes not staged for commit:
+	modified:   Git_GitHubTutorial.txt
+	modified:   third.rtf
+
+no changes added to commit
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git add .
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git commit -m "Here are some changes to the two files"
+[master 78236e2] Here are some changes to the two files
+ 2 files changed, 62 insertions(+), 1 deletion(-)
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git diff
+diff --git a/Git_GitHubTutorial.txt b/Git_GitHubTutorial.txt
+index e2c4036..8fecd34 100644
+--- a/Git_GitHubTutorial.txt
++++ b/Git_GitHubTutorial.txt
+@@ -403,3 +403,17 @@ index 28a9aa5..db37a5b 100644
+ \ No newline at end of file
+ 
+ 
++Parmods-MacBook-Pro:GitGitHub parmodkumar$ git commit -m "Here are some changes to the two files"
++On branch master
++Changes not staged for commit:
++       modified:   Git_GitHubTutorial.txt
++       modified:   third.rtf
++
++no changes added to commit
++
++Parmods-MacBook-Pro:GitGitHub parmodkumar$ git add .
++
++Parmods-MacBook-Pro:GitGitHub parmodkumar$ git commit -m "Here are some changes to the two files"
++[master 78236e2] Here are some changes to the two files
++ 2 files changed, 62 insertions(+), 1 deletion(-)
+
