@@ -633,3 +633,56 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git commit -m "adding all the files"
+[master 842e1ce] adding all the files
+ 1 file changed, 95 insertions(+)
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git log
+commit 842e1ce2fce2a3f50758c585c68fc4fcceb35b56
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 11:29:28 2016 +0530
+
+    adding all the files
+
+commit 088d141850f224299f7e7cdbcefac52210f32904
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 11:07:13 2016 +0530
+
+    Cleaned up the comments
+
+commit 9f23b51646ee81cf45bd65f6873180477861e062
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 11:02:37 2016 +0530
+
+    renamed file and put in NotesVC
+
+commit 5cd62eb997e45146887edba93329db558c105423
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 10:53:37 2016 +0530
+
+    renamed and deleted some files
+
+commit e7b48bf565ae6c1b1688684c2dcdfb4d6a9c70c9
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 10:46:53 2016 +0530
+
+    This is the point we deleted third.rtf
+
+commit 8743e68f0d5a603b08aedf085dfa19a88f1f6078
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 10:42:51 2016 +0530
+
+    some minor changes
+
+commit 78236e28d4bef47ef627eb13bf48fad401f1f09f
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 10:37:01 2016 +0530
+
+    Here are some changes to the two files
+
+commit 79d3bea10a1d9bbba80ca5d1653635e7817951fe
+Author: Parmod Kumar <caldmet70@gmail.com>
+Date:   Thu Apr 14 10:32:14 2016 +0530
+
+    We are commiting our changes
+
