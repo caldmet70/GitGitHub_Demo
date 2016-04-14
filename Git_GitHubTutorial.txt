@@ -505,3 +505,36 @@ Parmods-MacBook-Pro:GitGitHub parmodkumar$ git commit -m "renamed and deleted so
  1 file changed, 7 deletions(-)
  delete mode 100644 second.rtf
 
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git mv home.rtf homefile.rtf
+fatal: not under version control, source=home.rtf, destination=homefile.rtf
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git add .
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git mv home.rtf homefile.rtf
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ ls
+Git_GitHubTutorial.txt	foo.txt			homefile.rtf
+
+(## moving a file is similar to renaming a file)
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git mv homefile.rtf NotesVC/filehome.rtf
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ ls
+Git_GitHubTutorial.txt	NotesVC			foo.txt
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ cd NotesVC
+Parmods-MacBook-Pro:NotesVC parmodkumar$ ls
+filehome.rtf
+
+Parmods-MacBook-Pro:NotesVC parmodkumar$ cd ..
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git commit -m "renamed file and put in NotesVC"
+[master 9f23b51] renamed file and put in NotesVC
+ 2 files changed, 72 insertions(+)
+ create mode 100644 NotesVC/filehome.rtf
+
+Parmods-MacBook-Pro:GitGitHub parmodkumar$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Git_GitHubTutorial.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
